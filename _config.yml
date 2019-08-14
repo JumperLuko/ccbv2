@@ -14,8 +14,8 @@ description: O conceito do CCBV surgiu em 2018 com a finalidade de aproximar as 
   adultos ou idosos, oferecendo um espaço para se sentir bem e ganhar novas habilidades.
   Aqui no CCBV você encontra professores experientes e que amam compartilhar as artes
   que sabem.
-baseurl: ''
-url: ''
+baseurl: 
+url: 
 markdown: kramdown
 theme: minima
 plugins:
