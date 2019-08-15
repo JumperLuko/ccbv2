@@ -666,9 +666,9 @@ html {font-family: "Lucida Sans", sans-serif, Arial;}
         flex-direction: column; /* or row */
         /* width: 100%; */
     }
-    :hover > .dropdown-sub {
-        display: flex;
-    }
+}
+.dropdown:hover > .dropdown-sub {
+    display: flex;
 }
 /*.dropdown:hover > .dropdown-sub  > .dropdown-option:hover{
     background-color: #abcdef;

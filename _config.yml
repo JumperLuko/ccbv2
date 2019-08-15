@@ -18,5 +18,6 @@ baseurl:
 url: 
 markdown: kramdown
 theme: minima
+permalink: /:categories/:title
 plugins:
 - jekyll-feed

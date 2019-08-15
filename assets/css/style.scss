@@ -1,36 +1,66 @@
 body{
     background:#f3ece6;
     background-image: linear-gradient(150deg, #f3ece6, #fffbf8);
+    font-family: 'Muli', sans-serif;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-family: 'Nunito Sans', sans-serif;
 }
+/* http://paletton.com/#uid=7500u0kp0dLbXp5i1ioy67DU52x */
 
 nav{
     min-height: 60px;
+    background: #1b0016;
+    background-image: linear-gradient(1deg, #4E1142, #710b5f);
+    color:#ffffff;
+    letter-spacing: 0.040rem;
     box-shadow: black 0 0 10px 1px;
+    font-size:1.30rem;
+    word-spacing:0.2rem;
+    font-family: 'Open Sans', sans-serif;
     a{
         text-decoration: unset;
         color: unset;
         max-width: 100%;
     }
     > a{
-        min-height:60px;
+        min-height:80px;
         padding:0 40px;
-        font-size:1.40rem;
-        // background: gray;
     }
     > div{
-        // background: darkolivegreen;
-        font-size:1.1rem;
-        > a{
-            min-height:60px;
+        > a, .dropdown > a{
+            min-height:80px;
             height:100%;
-            padding:0 20px;
+            padding:0 10px;
             display:flex;
             justify-content: center;
             align-items: center;
-            // border:gray solid 1px;
         }
-        > a:hover{
-            background-color: #00000022;
+        > a:hover, 
+        .dropdown:hover > a, 
+        .dropdown > .dropdown-sub > .dropdown-option:hover
+        {background-color: #00000088;transition: 0.1s all linear;}
+        .dropdown{
+            height: 80px;
+            > .dropdown-sub{
+                background: #2C0024;
+                background-image: linear-gradient(#4E1142,#2C0024);
+                width: 100%;
+                >.dropdown-option{
+                    min-height:50px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    padding: 15px 10px;
+                }
+            }
         }
+    }
+}
+
+footer{
+    background-color:#0d0414;
+    color:#ffffff;
+    > div{
+        padding:20px 40px;
     }
 }

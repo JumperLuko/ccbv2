@@ -1983,7 +1983,7 @@ html {
   /* width: 100%; */
 }
 
-.dropdown :hover > .dropdown-sub {
+.dropdown:hover > .dropdown-sub {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

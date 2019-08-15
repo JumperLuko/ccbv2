@@ -2,4 +2,32 @@
 title: Home
 layout: default
 ---
+<link rel="stylesheet" type="text/css" href="/assets/css/{{ page.title }}.min.css">
+<script>
+    function scrollBanner() {
+        var paralaxItem = document.querySelector(".titleCCBV");
+        var scrollPosition = window.scrollY;
+        var topNav = document.querySelector("nav").offsetHeight;
 
+        if (scrollPosition < 800+topNav && scrollPosition > topNav){
+            paralaxItem.style.height = (800-(scrollPosition-topNav)) +"px";
+            paralaxItem.style.opacity = 1 - ((scrollPosition-topNav)/2500);
+            paralaxItem.style.marginTop = scrollPosition-topNav+0 +"px";
+        }else if(scrollPosition < topNav){
+            paralaxItem.style.marginTop= +0+"px";
+            paralaxItem.style.height = 800+"px";
+        }
+    }
+    window.addEventListener('scroll', scrollBanner);
+</script>
+<div class="titleCCBV flex center">
+    <img src="/assets/img/logo.svg" alt="CCBV Centro Cultural Barra Velha (logo)">
+</div>
+<main>
+    <div class="cursos flex wrap aroundH">
+        <h1 class="centerText col-12 h0" style="margin:60px 0;">Nossos Cursos</h1>
+        {% for post in site.categories.CursosTopicos reversed %}
+            <div class="col-4 col-m-3 col-g-2"><h2 class="centerText">{{post.title}}</h2>{{post.content}}</div>
+        {% endfor %}
+    </div>
+</main>
