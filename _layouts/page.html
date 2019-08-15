@@ -9,11 +9,11 @@ layout: default
         var topNav = document.querySelector("nav").offsetHeight;
 
         if (scrollPosition < 150+topNav && scrollPosition > topNav){
-            paralaxItem.style.height = (150-(scrollPosition-topNav)) +"px";
+            // paralaxItem.style.height = (150-(scrollPosition-topNav)) +"px";
             paralaxItem.style.opacity = 1 - ((scrollPosition-topNav)/150);
-            paralaxItem.style.marginTop = scrollPosition-topNav+0 +"px";
+            paralaxItem.style.paddingTop = scrollPosition-topNav+0 +"px";
         }else if(scrollPosition < topNav){
-            paralaxItem.style.marginTop= +0+"px";
+            paralaxItem.style.paddingTop= +0+"px";
             paralaxItem.style.height = 150+"px";
         }
     }

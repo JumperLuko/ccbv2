@@ -11,18 +11,18 @@ layout: default
         var topNav = document.querySelector("nav").offsetHeight;
 
         if (scrollPosition < 800+topNav && scrollPosition > topNav){
-            paralaxItem.style.height = (800-(scrollPosition-topNav)) +"px";
+            // paralaxItem.style.height = (800-(scrollPosition-topNav)) +"px";
             paralaxItem.style.opacity = 1 - ((scrollPosition-topNav)/2500);
-            paralaxItem.style.marginTop = scrollPosition-topNav+0 +"px";
+            paralaxItem.style.paddingTop = scrollPosition-topNav+0 +"px";
         }else if(scrollPosition < topNav){
-            paralaxItem.style.marginTop= +0+"px";
+            paralaxItem.style.paddingTop= +0+"px";
             paralaxItem.style.height = 800+"px";
         }
     }
     window.addEventListener('scroll', scrollBanner);
 </script>
 <div class="titleCCBV flex center">
-    <img src="/assets/img/logo.svg" alt="CCBV Centro Cultural Barra Velha (logo)">
+    <img src="/assets/img/logo.svg" alt="CCBV Centro Cultural Barra Velha (logo)" style="max-width:100%;">
 </div>
 <main>
     <div class="cursos flex wrap aroundH">
