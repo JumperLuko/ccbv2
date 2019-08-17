@@ -3,6 +3,7 @@ title: Cursos
 permalink: "/cursos/"
 layout: page
 ---
+
 {% for post in site.categories.Cursos reversed %}
     <div class="col-4 col-m-3"><h2 class="centerText">{{post.title}}</h2>{{post.content}}</div>
 {% endfor %}
