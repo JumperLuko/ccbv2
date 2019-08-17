@@ -1,0 +1,19 @@
+form{
+    >input,>textarea,>button{
+        width:100%;
+        padding:15px;
+        border: none;
+        margin: 5px 0;
+    }
+    >input{
+        background: #fdfdff;
+    }
+    >textarea{
+        background: #fdfdff;height:200px;resize:none;
+    }
+    >button{
+        background: #dddddd;
+        font-size: 1.5rem;
+    }
+    >button:hover{background: #ebebeb;}
+}

@@ -8,5 +8,4 @@ layout: post
 
 - Cerâmica
 - Desenho Artístico
-- Escultura
 - Pintura em Tela

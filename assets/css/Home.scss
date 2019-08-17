@@ -9,8 +9,9 @@
 }
 
 .cursos{
-    background-color:#e8eee5;
-    background-image: linear-gradient(#f3ece6,#eee5dd);
+    background-color:#f3ece6;
+    background: url("/assets/img/bg.png") repeat fixed center,linear-gradient(#f3ece6,#e1d5ca);
+    padding: 60px 10%;
     >div{
         padding:15px;
         font-size:1.1rem;
@@ -23,4 +24,21 @@
             }
         }
     }
+}
+
+.eventos{
+    background-color:#e1d5ca;
+    background: url("/assets/img/bg.png") repeat fixed center,linear-gradient(#e1d5ca,#f3ece6);
+    padding: 60px 0 160px 0;
+    > div{
+        h1{font-size:3rem;margin-bottom: 0;}
+        h2{margin-top: 0;}
+    }
+}
+
+.instagram{
+    background-color:#e1d5ca;
+    background-image:url("/assets/img/instagram-background.jpg");
+    background-size:cover;
+    color:#ffffff;
 }
