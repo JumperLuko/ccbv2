@@ -1,9 +1,16 @@
 ---
 title: Cursos
 permalink: "/cursos/"
-layout: page
+layout: page-clean
 ---
-
+<main class="flex wrap aroundH" style="min-height: calc(100vh - 250px);padding:40px;">
 {% for post in site.categories.Cursos reversed %}
-    <div class="col-4 col-m-3"><h2 class="centerText">{{post.title}}</h2>{{post.content}}</div>
+    <div class="col-5 col-b-4 flex center wow animated fadeIn" style="padding:100px 20px;animation-delay:0.3s;">
+        <div style="max-width:300px;">
+            <img src="/uploads/{{post.title}}.jpg" class="col-12">
+            <h2 class="centerText">{{post.title}}</h2>
+            {{post.content}}
+        </div>
+    </div>
 {% endfor %}
+</main>
