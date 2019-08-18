@@ -1,13 +1,7 @@
 ---
 title: Centro Cultural de Barra Velha
-timezone: UTC
+timezone: America/Sao_Paulo
 collections:
-  posts:
-    title: Posts
-    output: true
-  uploads:
-    title: Uploads
-    output: true
   cursos:
     title: Cursos
     output: true
@@ -16,6 +10,12 @@ collections:
     output: true
   eventos:
     title: Eventos
+    output: true
+  posts:
+    title: Posts
+    output: true
+  uploads:
+    title: Uploads
     output: true
 email: your-email@example.com
 description: O conceito do CCBV surgiu em 2018 com a finalidade de aproximar as artes
