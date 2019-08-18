@@ -1,6 +1,6 @@
 ---
 title: Violão
-# date: 2019-08-17 17:00:00 Z
+date: 2019-08-17 00:00:00 Z
 categories:
 - Cursos
 layout: post
