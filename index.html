@@ -27,14 +27,14 @@ layout: default
 <main>
     <div class="cursos flex wrap centerH">
         <h1 class="centerText col-12 h0 wow animated zoomIn" style="animation-delay:0.5s;">Nossos Cursos</h1>
-        {% for post in site.categories.CursosTopicos reversed %}
-            <div class="col-4 col-m-3 wow animated flipInX slow" style="animation-delay:0.5s;"><h2 class="centerText">{{post.title}}</h2>{{post.content}}</div>
+        {% for cursosTopicos in site.cursosTopicos %}
+            <div class="col-4 col-m-3 wow animated flipInX slow" style="animation-delay:0.5s;"><h2 class="centerText">{{cursosTopicos.title}}</h2>{{cursosTopicos.content}}</div>
         {% endfor %}
     </div>
     <div class="eventos flex wrap centerH">
         <div class="flex center col-12"><h1 class="centerText h0 wow animated jackInTheBox" style="margin:0.7em 0;animation-delay:0.5s;">Próximos Eventos</h1></div>
-        {% for post in site.categories.Evento %}
-            <div class="col-5 col-m-4 centerText wow animated fadeIn" style="animation-delay:0.5s;">{{post.content}}</div>
+        {% for eventos in site.eventos reversed %}
+            <div class="col-5 col-m-4 centerText wow animated fadeIn" style="animation-delay:0.5s;">{{eventos.content}}</div>
         {% endfor %}
     </div>
     <div class="instagram flex">

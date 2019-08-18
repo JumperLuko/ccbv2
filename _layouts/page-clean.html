@@ -2,33 +2,6 @@
 layout: default
 ---
 
-<script>
-    function scrollBanner() {
-        var paralaxItem = document.querySelector(".titlePage");
-        var scrollPosition = window.scrollY;
-        var topNav = document.querySelector("nav").offsetHeight;
-
-        if (scrollPosition < 300+topNav && scrollPosition > topNav){
-            // paralaxItem.style.height = (300-(scrollPosition-topNav)) +"px";
-            // paralaxItem.style.opacity = 1 - ((scrollPosition-topNav)/100);
-            paralaxItem.style.paddingTop = scrollPosition-topNav+0 +"px";
-        }else if(scrollPosition < topNav){
-            paralaxItem.style.paddingTop= +0+"px";
-            paralaxItem.style.height = 300+"px";
-        }
-    }
-    window.addEventListener('scroll', scrollBanner);
-</script>
-<style>
-    .variantFilter{
-        filter: hue-rotate(0);
-        animation: paraDeLerEFaz 10s infinite;
-    }
-    @keyframes paraDeLerEFaz{
-        0% {filter: hue-rotate(0DEG) invert(0%) saturate(1) sepia(0%) contrast(100%) brightness(100%) grayscale(0%);}
-        50% {filter: hue-rotate(360DEG) invert(0%) saturate(1.5) sepia(0%) contrast(150%) brightness(100%) grayscale(0%);}
-        100% {filter: hue-rotate(0DEG) invert(0%) saturate(1) sepia(0%) contrast(100%) brightness(100%) grayscale(0%);}
-    }
-</style>
-<h1 class="titlePage flex center h0 variantFilter" style="height:300px;margin:0;background-color:#8F5A85;background-image:url('/assets/img/smoke.jpg');background-size:cover;overflow:hidden;">{{page.title}}</h1>
+<script src="/assets/js/scrollTitle.js"></script>
+<header><h1 class="titlePage flex center h0 pageTitle">{{page.title}}</h1></header>
 {{content}}

@@ -5,7 +5,7 @@ body {
   font-family: 'Source Sans Pro', sans-serif;
 }
 
-/* http://paletton.com/#uid=7500u0kp0dLbXp5i1ioy67DU52x */
+/* http://paletton.com/#uid=5500M0kp0dLbXp5i1ioy67DU52x */
 ::-webkit-scrollbar {
   width: 13px;
 }
@@ -34,6 +34,7 @@ nav {
   letter-spacing: 0.040rem;
   -webkit-box-shadow: black 0 0 10px 1px;
           box-shadow: black 0 0 10px 1px;
+  position: relative;
   font-size: 1.30rem;
   word-spacing: 0.2rem;
   font-family: 'Open Sans', sans-serif;
@@ -105,4 +106,57 @@ footer {
 
 footer > div {
   padding: 20px 40px;
+}
+
+/* --- Page --- */
+header > .pageTitle {
+  height: 300px;
+  margin: 0;
+  overflow: hidden;
+  background-color: #b3e5ff;
+  background-image: url("/assets/img/title-bg.jpg");
+  background-size: 100% 100%;
+  background-position-y: 0px;
+  -webkit-filter: hue-rotate(0DEG) saturate(1);
+          filter: hue-rotate(0DEG) saturate(1);
+  -webkit-animation: paraDeLerEFaz 15s infinite;
+          animation: paraDeLerEFaz 15s infinite;
+}
+
+@-webkit-keyframes paraDeLerEFaz {
+  0% {
+    -webkit-filter: hue-rotate(0DEG) saturate(1);
+            filter: hue-rotate(0DEG) saturate(1);
+  }
+  20% {
+    -webkit-filter: hue-rotate(15DEG) saturate(2);
+            filter: hue-rotate(15DEG) saturate(2);
+  }
+  70% {
+    -webkit-filter: hue-rotate(15DEG) saturate(2);
+            filter: hue-rotate(15DEG) saturate(2);
+  }
+  100% {
+    -webkit-filter: hue-rotate(0DEG) saturate(1);
+            filter: hue-rotate(0DEG) saturate(1);
+  }
+}
+
+@keyframes paraDeLerEFaz {
+  0% {
+    -webkit-filter: hue-rotate(0DEG) saturate(1);
+            filter: hue-rotate(0DEG) saturate(1);
+  }
+  20% {
+    -webkit-filter: hue-rotate(15DEG) saturate(2);
+            filter: hue-rotate(15DEG) saturate(2);
+  }
+  70% {
+    -webkit-filter: hue-rotate(15DEG) saturate(2);
+            filter: hue-rotate(15DEG) saturate(2);
+  }
+  100% {
+    -webkit-filter: hue-rotate(0DEG) saturate(1);
+            filter: hue-rotate(0DEG) saturate(1);
+  }
 }

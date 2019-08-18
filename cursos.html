@@ -4,12 +4,12 @@ permalink: "/cursos/"
 layout: page-clean
 ---
 <main class="flex wrap aroundH" style="min-height: calc(100vh - 250px);padding:40px;">
-{% for post in site.categories.Cursos reversed %}
+{% for cursos in site.cursos %}
     <div class="col-5 col-b-4 flex center wow animated fadeIn" style="padding:100px 20px;animation-delay:0.3s;">
         <div style="max-width:300px;">
-            <img src="/uploads/{{post.title}}.jpg" class="col-12">
-            <h2 class="centerText">{{post.title}}</h2>
-            {{post.content}}
+            <img src="/uploads/{{cursos.title}}.jpg" class="col-12">
+            <h2 class="centerText">{{cursos.title}}</h2>
+            {{cursos.content}}
         </div>
     </div>
 {% endfor %}
