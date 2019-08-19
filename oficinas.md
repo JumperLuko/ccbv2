@@ -4,4 +4,4 @@ permalink: "/oficinas/"
 layout: page
 ---
 
-# Como será o conteúdo aqui?
+# Interessa os horários das aulas aqui?

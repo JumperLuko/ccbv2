@@ -11,10 +11,13 @@
 .cursos{
     background-color:#f3ece6;
     background: url("/assets/img/bg.png") repeat fixed center,linear-gradient(#f3ece6,#e1d5ca);
-    padding: 60px 10%;
+    padding: 60px 0;
+    @media only screen and (min-width: 500px) {padding: 60px 60px;}
     >div{
         padding:15px;
+        margin: 15px;
         font-size:1.1rem;
+        background-color: #f3ece6;
         ul{
             padding:0px;
             text-align:center;
@@ -30,7 +33,10 @@
     background-color:#e1d5ca;
     background: url("/assets/img/bg.png") repeat fixed center,linear-gradient(#e1d5ca,#f3ece6);
     padding: 60px 0 160px 0;
-    > div{
+    > div.evento{
+        background-color: #e1d5ca;
+        margin:40px 0px;
+        @media only screen and (min-width: 500px) {margin:40px 40px;} 
         h1{font-size:3rem;margin-bottom: 0;}
         h2{margin-top: 0;}
     }

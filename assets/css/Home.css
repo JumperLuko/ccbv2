@@ -12,12 +12,20 @@
   background-color: #f3ece6;
   background: url("/assets/img/bg.png") repeat fixed center, -webkit-gradient(linear, left top, left bottom, from(#f3ece6), to(#e1d5ca));
   background: url("/assets/img/bg.png") repeat fixed center, linear-gradient(#f3ece6, #e1d5ca);
-  padding: 60px 10%;
+  padding: 60px 0;
+}
+
+@media only screen and (min-width: 500px) {
+  .cursos {
+    padding: 60px 60px;
+  }
 }
 
 .cursos > div {
   padding: 15px;
+  margin: 15px;
   font-size: 1.1rem;
+  background-color: #f3ece6;
 }
 
 .cursos > div ul {
@@ -37,12 +45,23 @@
   padding: 60px 0 160px 0;
 }
 
-.eventos > div h1 {
+.eventos > div.evento {
+  background-color: #e1d5ca;
+  margin: 40px 0px;
+}
+
+@media only screen and (min-width: 500px) {
+  .eventos > div.evento {
+    margin: 40px 40px;
+  }
+}
+
+.eventos > div.evento h1 {
   font-size: 3rem;
   margin-bottom: 0;
 }
 
-.eventos > div h2 {
+.eventos > div.evento h2 {
   margin-top: 0;
 }
 
