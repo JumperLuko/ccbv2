@@ -26,6 +26,8 @@
   margin: 15px;
   font-size: 1.1rem;
   background-color: #f3ece6;
+  -webkit-box-shadow: #00000066 0px 30px 16px -10px;
+          box-shadow: #00000066 0px 30px 16px -10px;
 }
 
 .cursos > div ul {
@@ -48,6 +50,8 @@
 .eventos > div.evento {
   background-color: #e1d5ca;
   margin: 40px 0px;
+  -webkit-box-shadow: #00000066 0px 40px 16px -20px;
+          box-shadow: #00000066 0px 40px 16px -20px;
 }
 
 @media only screen and (min-width: 500px) {
