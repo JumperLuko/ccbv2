@@ -28,7 +28,7 @@ layout: default
     <div class="cursos flex wrap centerH">
         <h1 class="centerText col-12 h0 wow animated zoomIn" style="animation-delay:0.5s;">Nossos Cursos</h1>
         {% for cursosTopicos in site.cursosTopicos %}
-            <div class="col-4 col-m-3 wow animated flipInX slow" style="animation-delay:0.5s;"><h2 class="centerText">{{cursosTopicos.title}}</h2>{{cursosTopicos.content}}</div>
+            <a href="/cursos/" class="col-4 col-m-3 wow animated flipInX slow ainherit" style="animation-delay:0.5s;"><h2 class="centerText">{{cursosTopicos.title}}</h2>{{cursosTopicos.content}}</a>
         {% endfor %}
     </div>
     <div class="eventos flex wrap centerH">

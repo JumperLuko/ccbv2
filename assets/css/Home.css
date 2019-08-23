@@ -21,21 +21,22 @@
   }
 }
 
-.cursos > div {
+.cursos > a {
   padding: 15px;
   margin: 15px;
   font-size: 1.1rem;
+  font-family: 'Roboto Mono', monospace;
   background-color: #f3ece6;
   -webkit-box-shadow: #00000066 0px 30px 16px -10px;
           box-shadow: #00000066 0px 30px 16px -10px;
 }
 
-.cursos > div ul {
+.cursos > a ul {
   padding: 0px;
   text-align: center;
 }
 
-.cursos > div ul li {
+.cursos > a ul li {
   list-style-type: none;
   padding: 5px 0;
 }
@@ -52,6 +53,7 @@
   margin: 40px 0px;
   -webkit-box-shadow: #00000066 0px 40px 16px -20px;
           box-shadow: #00000066 0px 40px 16px -20px;
+  font-family: 'Roboto Mono', monospace;
 }
 
 @media only screen and (min-width: 500px) {

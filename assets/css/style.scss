@@ -1,8 +1,7 @@
 body{
     background:#f3ece6;
     background-image: linear-gradient(150deg, #f3ece6, #fffbf8);
-    font-family: 'Muli', sans-serif;
-    font-family: 'Source Sans Pro', sans-serif;
+    font-family: 'Nunito', sans-serif;
 }
 /* http://paletton.com/#uid=5500M0kp0dLbXp5i1ioy67DU52x */
 
@@ -67,6 +66,7 @@ nav{
 footer{
     background-color:#0d0414;
     color:#ffffff;
+    font-family: 'Poppins', sans-serif;
     > div{
         padding:20px 40px;
     }
@@ -78,6 +78,9 @@ header > .pageTitle{
     height:300px;
     margin:0;
     overflow:hidden;
+    font-size: 5rem;
+    font-family: 'Lexend Zetta', sans-serif;
+    color:#360c15;
     background-color:#b3e5ff;
     background-image:url('/assets/img/title-bg.jpg');
     background-size:100% 100%;

@@ -4,8 +4,6 @@
           animation-delay: 0.3s;
 }
 
-.curso > div {
-  -webkit-box-shadow: #000000 0 0 10px -3px;
-          box-shadow: #000000 0 0 10px -3px;
-  padding: 20px;
+.curso > a {
+  max-width: 300px;
 }
