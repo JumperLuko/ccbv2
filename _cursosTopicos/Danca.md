@@ -7,6 +7,6 @@ layout: post
 ---
 
 - Baby Class
-- Jazz
+- [Jazz](/cursos/#Jazz)
 - Dança Rítmica
 - Dança do Ventre

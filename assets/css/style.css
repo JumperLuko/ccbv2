@@ -1,7 +1,9 @@
 body {
   background: #f3ece6;
-  background-image: linear-gradient(150deg, #f3ece6, #fffbf8);
+  background-image: url("/assets/img/tracos.webp"), linear-gradient(150deg, #f3ece6, #fffbf8);
   font-family: 'Nunito', sans-serif;
+  -webkit-animation: backgroudColors 20s infinite;
+          animation: backgroudColors 20s infinite;
 }
 
 /* http://paletton.com/#uid=5500M0kp0dLbXp5i1ioy67DU52x */
@@ -102,6 +104,7 @@ footer {
   background-color: #0d0414;
   color: #ffffff;
   font-family: 'Poppins', sans-serif;
+  text-align: center;
 }
 
 footer > div {
@@ -113,20 +116,38 @@ header > .pageTitle {
   height: 300px;
   margin: 0;
   overflow: hidden;
-  font-size: 5rem;
   font-family: 'Lexend Zetta', sans-serif;
   color: #360c15;
-  background-color: #b3e5ff;
+  background-color: #4364bf;
   background-image: url("/assets/img/title-bg.jpg");
   background-size: 100% 100%;
   background-position-y: 0px;
+  background-repeat: no-repeat;
   -webkit-filter: hue-rotate(0DEG) saturate(1);
           filter: hue-rotate(0DEG) saturate(1);
-  -webkit-animation: paraDeLerEFaz 15s infinite;
-          animation: paraDeLerEFaz 15s infinite;
+  -webkit-animation: pageTitleFilters 15s infinite;
+          animation: pageTitleFilters 15s infinite;
 }
 
-@-webkit-keyframes paraDeLerEFaz {
+@media only screen and (min-width: 600px) {
+  header > .pageTitle {
+    font-size: 5rem;
+  }
+}
+
+.page > main {
+  min-height: calc(100vh - 250px);
+  width: 1000px;
+  max-width: 100%;
+  padding: 30px 5%;
+  margin: 0 5%;
+}
+
+main {
+  background-image: linear-gradient(150deg, #f3ece6, #fffbf8);
+}
+
+@-webkit-keyframes pageTitleFilters {
   0% {
     -webkit-filter: hue-rotate(0DEG) saturate(1);
             filter: hue-rotate(0DEG) saturate(1);
@@ -145,7 +166,7 @@ header > .pageTitle {
   }
 }
 
-@keyframes paraDeLerEFaz {
+@keyframes pageTitleFilters {
   0% {
     -webkit-filter: hue-rotate(0DEG) saturate(1);
             filter: hue-rotate(0DEG) saturate(1);

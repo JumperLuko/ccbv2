@@ -21,7 +21,7 @@
   }
 }
 
-.cursos > a {
+.cursos > div {
   padding: 15px;
   margin: 15px;
   font-size: 1.1rem;
@@ -31,12 +31,17 @@
           box-shadow: #00000066 0px 30px 16px -10px;
 }
 
-.cursos > a ul {
+.cursos > div a {
+  text-decoration: inherit;
+  color: inherit;
+}
+
+.cursos > div ul {
   padding: 0px;
   text-align: center;
 }
 
-.cursos > a ul li {
+.cursos > div ul li {
   list-style-type: none;
   padding: 5px 0;
 }

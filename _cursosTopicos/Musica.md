@@ -6,6 +6,6 @@ categories:
 layout: post
 ---
 
-- Violão
+- [Violão](/cursos/#Violão)
 - Musicalização Infantil
 - Teclado

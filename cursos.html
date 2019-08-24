@@ -7,12 +7,12 @@ layout: page-clean
 <link rel="stylesheet" type="text/css" href="/assets/css/{{ page.title }}.min.css">
 <main class="flex wrap aroundH" style="min-height: calc(100vh - 250px);padding:40px;">
 {% for cursos in site.cursos %}
-    <div class="col-5 col-b-4 flex centerH up wow animated fadeIn curso">
-        <a href="{{cursos.url}}" class="ainherit">
+    <a href="{{cursos.url}}" id="{{cursos.title}}" class="col-5 col-b-4 flex centerH up wow animated fadeIn curso ainherit">
+        <div>
             <img src="/uploads/{{cursos.title}}.jpg" class="col-12">
             <h2 class="centerText">{{cursos.title}}</h2>
             {{cursos.excerpt}}
-        </a>
-    </div>
+        </div>
+    </a>
 {% endfor %}
 </main>

@@ -13,13 +13,17 @@
     background: url("/assets/img/bg.png") repeat fixed center,linear-gradient(#f3ece6,#e1d5ca);
     padding: 60px 0;
     @media only screen and (min-width: 500px) {padding: 60px 60px;}
-    >a{
+    >div{
         padding:15px;
         margin: 15px;
         font-size:1.1rem;
         font-family: 'Roboto Mono', monospace;
         background-color: #f3ece6;
         box-shadow: #00000066 0px 30px 16px -10px;
+        a{
+            text-decoration: inherit;
+            color: inherit;
+        }
         ul{
             padding:0px;
             text-align:center;

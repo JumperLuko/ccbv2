@@ -6,6 +6,6 @@ categories:
 layout: post
 ---
 
-- Cerâmica
-- Desenho Artístico
+- [Cerâmica](/cursos/#Cerâmica)
+- [Desenho Artístico](/cursos/#Desenho Artístico)
 - Pintura em Tela

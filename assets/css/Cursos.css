@@ -4,6 +4,6 @@
           animation-delay: 0.3s;
 }
 
-.curso > a {
+.curso > div {
   max-width: 300px;
 }

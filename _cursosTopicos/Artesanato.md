@@ -6,5 +6,5 @@ categories:
 layout: post
 ---
 
-- Crochê
-- Tricot
+- [Crochê](/cursos/#Crochê e Tricô)
+- [Tricot](/cursos/#Crochê e Tricô)
