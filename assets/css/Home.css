@@ -56,8 +56,6 @@
 .eventos > div.evento {
   background-color: #e1d5ca;
   margin: 40px 0px;
-  -webkit-box-shadow: #00000066 0px 40px 16px -20px;
-          box-shadow: #00000066 0px 40px 16px -20px;
   font-family: 'Roboto Mono', monospace;
 }
 
@@ -81,4 +79,8 @@
   background-image: url("/assets/img/instagram-background.jpg");
   background-size: cover;
   color: #ffffff;
+}
+
+.instagram blockquote, .instagram iframe {
+  margin: 40px !important;
 }

@@ -42,7 +42,7 @@
     > div.evento{
         background-color: #e1d5ca;
         margin:40px 0px;
-        box-shadow: #00000066 0px 40px 16px -20px;
+        // box-shadow: #00000066 0px 40px 16px -20px;
         font-family: 'Roboto Mono', monospace;
         @media only screen and (min-width: 500px) {margin:40px 40px;} 
         h1{font-size:3rem;margin-bottom: 0;}
@@ -55,4 +55,7 @@
     background-image:url("/assets/img/instagram-background.jpg");
     background-size:cover;
     color:#ffffff;
+    blockquote,iframe{
+        margin:40px !important;
+    }
 }

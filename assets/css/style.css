@@ -6,6 +6,10 @@ body {
           animation: backgroudColors 20s infinite;
 }
 
+img {
+  max-width: 100%;
+}
+
 /* http://paletton.com/#uid=5500M0kp0dLbXp5i1ioy67DU52x */
 ::-webkit-scrollbar {
   width: 13px;
