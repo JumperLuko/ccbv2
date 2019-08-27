@@ -1,6 +1,5 @@
 body {
   background: #f3ece6;
-  background-image: url("/assets/img/tracos.webp"), linear-gradient(150deg, #f3ece6, #fffbf8);
   font-family: 'Nunito', sans-serif;
   -webkit-animation: backgroudColors 20s infinite;
           animation: backgroudColors 20s infinite;
@@ -111,8 +110,29 @@ footer {
   text-align: center;
 }
 
+footer > div.siga > h1 {
+  padding: 40px 0 20px 0;
+}
+
+footer > div.siga > a {
+  padding: 20px 40px;
+}
+
 footer > div {
   padding: 20px 40px;
+}
+
+footer > div > div, footer > div a {
+  padding: 10px;
+}
+
+footer > .line {
+  width: 30%;
+  margin: 50px 35%;
+  height: 2px;
+  border-radius: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 /* --- Page --- */
@@ -140,7 +160,6 @@ header > .pageTitle {
 }
 
 .page > main {
-  min-height: calc(100vh - 250px);
   width: 1000px;
   max-width: 100%;
   padding: 30px 5%;

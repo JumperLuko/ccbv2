@@ -1,6 +1,6 @@
 body{
     background:#f3ece6;
-    background-image: url("/assets/img/tracos.webp"),linear-gradient(150deg, #f3ece6, #fffbf8);
+    // background-image: url("/assets/img/tracos.webp"),linear-gradient(150deg, #f3ece6, #fffbf8);
     font-family: 'Nunito', sans-serif;
     animation: backgroudColors 20s infinite;
 }
@@ -77,8 +77,22 @@ footer{
     color:#ffffff;
     font-family: 'Poppins', sans-serif;
     text-align: center;
+    > div.siga{
+        >h1{padding:40px 0 20px 0;}
+        >a{padding: 20px 40px;}
+    }
+    > div.contate{}
     > div{
         padding:20px 40px;
+        > div,a{padding: 10px;}
+    }
+    > .line{
+        width:30%;
+        margin:50px 35%;
+        height:2px;
+        // background-color: #ffffff86;
+        border-radius: 100%;
+        object-fit: cover;
     }
 }
 
@@ -102,7 +116,6 @@ header {
     }
 }
 .page > main{
-    min-height: calc(100vh - 250px);
     width:1000px;
     max-width:100%;
     padding:30px 5%;
