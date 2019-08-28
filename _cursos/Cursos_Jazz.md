@@ -1,6 +1,6 @@
 ---
 title: Jazz
-date: 2019-08-17 00:00:00 Z
+date: 2019-08-16 21:00:00 -03:00
 categories:
 - Cursos
 layout: post
