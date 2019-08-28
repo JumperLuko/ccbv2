@@ -56,6 +56,7 @@
 .eventos > div.evento {
   background-color: #e1d5ca;
   margin: 40px 0px;
+  padding: 20px 0;
   font-family: 'Roboto Mono', monospace;
 }
 
@@ -81,6 +82,6 @@
   color: #ffffff;
 }
 
-.instagram blockquote, .instagram iframe {
+.instagram > blockquote, .instagram > iframe {
   margin: 40px !important;
 }

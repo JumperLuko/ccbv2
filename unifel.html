@@ -1,0 +1,17 @@
+---
+title: Unifel
+permalink: "/unifel/"
+layout: page
+---
+<style>
+.titlePage{
+    background-color: #e5691f !important;
+    /* filter: hue-rotate(132DEG) saturate(1) !important; */
+    background-image: url("/assets/img/title-bg-unifel.jpg") !important;
+    animation: none !important;
+</style>
+
+<style>h2{font-weight:normal;}</style>
+{% for posts in site.tags.unifel %}
+{{posts.content}}
+{% endfor %}

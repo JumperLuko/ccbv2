@@ -1,0 +1,14 @@
+---
+title: Sobre
+permalink: "/sobre/"
+layout: page
+---
+
+<style>
+    h2{font-weight:normal;}
+    /* .titlePage{background-image: url("/assets/img/ccbv-bg.png") !important;} */
+</style>
+
+{% for posts in site.tags.sobre %}
+{{posts.content}}
+{% endfor %}

@@ -1,6 +1,7 @@
 body{
     background:#f3ece6;
-    // background-image: url("/assets/img/tracos.webp"),linear-gradient(150deg, #f3ece6, #fffbf8);
+    background-image: url("/assets/img/bg.jpg"),linear-gradient(150deg, #f3ece6, #fffbf8);
+    background-attachment: fixed;
     font-family: 'Nunito', sans-serif;
     animation: backgroudColors 20s infinite;
 }
