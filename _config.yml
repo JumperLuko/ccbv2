@@ -11,6 +11,9 @@ collections:
   eventos:
     title: Eventos
     output: true
+  posts:
+    title: Posts
+    output: true
   paginas:
     title: Páginas
     output: true
